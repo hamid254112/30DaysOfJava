@@ -101,10 +101,22 @@ do {
 	i++;		
 }while(i <= 10);
 
-//in folder eclips workspace we tape:
-//git init
-//ls -a
+// in folder eclips workspace we tape:
+// git init
+// ls -a
 // sudo echo "
 // sudo " > .gitignore
 // git add .
-// git status								
+// git status
+// git commit -m "initial commit"
+// git status	
+// git log
+//git remote add origin https://github.com/hamid254112/30DaysOfJava.git
+//git branch -M main
+//git push -u origin main	
+//create a new project and new file we called test
+// git status
+// git add test/
+// git commit -m "test for github"
+// git log
+// git push origin main						
