@@ -119,4 +119,83 @@ do {
 // git add test/
 // git commit -m "test for github"
 // git log
-// git push origin main						
+// git push origin main	
+
+
+//create array we using for loop:
+package mySweetProgram;
+
+import java.util.Scanner;
+
+public class mySweetProgram {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Give us a size.");
+		int size = in.nextInt();
+		
+		int[] grades = new int[size];
+		
+		System.out.println("Enter " + size + " numbers. Press enter after each");
+		
+		for(int i = 0; i < size; i++) {
+			grades[i] = in.nextInt();
+		}
+		in.close();
+		
+		for(int i = 0; i < size; i++) {
+			System.out.println(grades[i]);
+		}
+	}
+
+}
+
+//how to read a file in java:
+package mySweetProgram;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class mySweetProgram {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner in = new Scanner(new File("/home/bm2020/eclipse-workspace/mySweetProgram/src/abdellah.txt"));
+		
+		while(in.hasNextLine()) {
+			System.out.println(in.nextLine());
+		}
+		in.close();
+	}
+
+}
+
+//using for and while loops to read file.txt:
+package mySweetProgram;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class mySweetProgram {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner in = new Scanner(new File("/home/bm2020/eclipse-workspace/mySweetProgram/src/abdellah.txt"));
+		
+		List<String> mahmoudi = new ArrayList<String>();
+		
+		while(in.hasNextLine()) {
+			mahmoudi.add(in.nextLine());
+		}
+		
+		for(int i = 0; i < mahmoudi.size(); i++) {
+			System.out.println("mahmoudi " + mahmoudi.get(i));
+		}
+		in.close();
+	}
+
+}
+
+					
